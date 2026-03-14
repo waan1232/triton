@@ -616,6 +616,21 @@ body{font-family:var(--font);background:linear-gradient(160deg,#0a1e20 0%,#0d2e3
 </style>
 </head>
 <body>
+  <!-- Back to Home button injected by Triton site build -->
+  <a href="index.html" id="back-home-btn" style="
+    position:fixed;top:76px;left:20px;z-index:2000;
+    display:inline-flex;align-items:center;gap:7px;
+    background:#005457;color:#fff;
+    font-family:'Inter',sans-serif;font-size:12px;font-weight:600;
+    letter-spacing:.04em;text-transform:uppercase;
+    padding:8px 16px;border-radius:7px;text-decoration:none;
+    box-shadow:0 2px 12px rgba(0,54,56,.3);
+    transition:background .15s,transform .15s;
+  "
+  onmouseover="this.style.background='#003638';this.style.transform='translateY(-1px)'"
+  onmouseout="this.style.background='#005457';this.style.transform='translateY(0)'"
+  >&#8592; Back to Home</a>
+
 
 <!-- NAV -->
 <nav>
